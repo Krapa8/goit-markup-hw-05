@@ -488,6 +488,17 @@ margin-right: 120px;
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.40);
+    opacity: 0;
+    visibility: hidden;
+    position: none;
+    transition: opacity 250mls cubic-bezier(0.4, 0, 0.2, 1), visibility 250mls cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
+  .is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
   }
   .modal {
     position: absolute;
@@ -498,10 +509,35 @@ margin-right: 120px;
     min-height: 584px;
     border-radius: 4px;
       background: #FCFCFC;
+      transition: transform 250 mls cubic-bezier(0.4, 0, 0.2, 1)
       
     }
     .modal-close-btn {
-      
-
+      position:absolute;
+      top: 24px;
+      right: 24px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      padding:0;
+      cursor: pointer;
+      border: 1px solid rgba(0, 0, 0, 0.10);
+background-color:#e7e9fc;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: background-color 250 mls cubic-bezier(0.4, 0, 0.2, 1), border 250 mls cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .
+    .modal-close-btn:hover,
+    .modal-close-btn:focus{
+      background-color: #404BBF;
+      border: none;
+    }
+.modal-close-icon{
+  transition: fill 250 mls cubic-bezier(0.4, 0, 0.2, 1)
+}
+    .modal-close-btn:hover > .modal-close-icon,
+    .modal-close-btn:focus > .modal-close-icon{
+      fill: #FFFFFF;
+    }
+
