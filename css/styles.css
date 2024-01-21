@@ -648,7 +648,9 @@ text-align: center;
 .final-check {
   margin-bottom: 24px;
 }
+.check-input {
 
+}
 .check-input :checked > .policy-span {
   fill: #F4F4FD;
 
@@ -698,6 +700,7 @@ text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
+  line-height: 2;
 }
 ::placeholder {
   color: #ffffff;
@@ -708,14 +711,12 @@ text-align: center;
   height: 40px;
   display: flex;
   justify-content: center;
-  align-items: center;
-    font-family: Roboto;
+  align-items: center; 
+  font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-
   color: #FFF;
     cursor: pointer;
     background-color: #4D5AE5;
