@@ -298,7 +298,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
   }
   .photo {
-    background: url(<path-to-image>), lightgray -97.034px -0.927px / 181.897% 251.37% no-repeat;
+    background: lightgray -97.034px -0.927px / 181.897% 251.37% no-repeat;
   }
 
   .name-text {
@@ -642,7 +642,7 @@ text-align: center;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-text-area :focus {
+.modal-text-area:focus {
   border-color: #4D5AE5;
 }
 .final-check {
@@ -661,6 +661,14 @@ text-align: center;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+.check-text a {
+  text-decoration: underline;
+}
+.check-input:checked + .check-text span {
+  border: none;
+  fill: #FFFFFF;
+}
+
 .policy-span {
   width: 16px;
   height: 16px;
@@ -725,5 +733,4 @@ text-align: center;
 }
 .subscribe-icon {
   margin-left: 16px;
-
 }
