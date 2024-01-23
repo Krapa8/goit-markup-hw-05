@@ -654,6 +654,7 @@ text-align: center;
 .check-input {
 
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -667,8 +668,10 @@ text-align: center;
   white-space: nowrap;
 }
 
-.check-input :checked > .policy-span {
-  fill: #F4F4FD;
+.check-input :checked + label span {
+  border: none;
+  fill: #FFFFFF;
+  background-color: #4D5AE5;
 
 }
 .check-text {
@@ -680,10 +683,7 @@ text-align: center;
 .check-text a {
   text-decoration: underline;
 }
-.check-input:checked + .check-text span {
-  border: none;
-  fill: #FFFFFF;
-}
+
 
 
 .check {
@@ -750,4 +750,7 @@ text-align: center;
 }
 .subscribe-icon {
   margin-left: 16px;
+}
+.privacy-policy-link {
+color:#4d5ae5;
 }
